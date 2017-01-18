@@ -1,7 +1,7 @@
 warning off MATLAB:tifflib:TIFFReadDirectory:libraryWarning
 
-start_number = 9450;
-end_number   = 9590;
+start_number = 4740;
+end_number   = 4830;
 %aviobj = avifile('try.avi');
 aviobj = VideoWriter('Video.avi');
 aviobj.FrameRate = 30;
@@ -37,8 +37,8 @@ end %for index = start_number:end_number
 disp('Closing movie file...')
 %aviobj = close(aviobj);
 
-disp('Playing movie file...')
-implay('Video.avi');
+%disp('Playing movie file...')
+%implay('Video.avi');
 close(aviobj);
 
 %writerObj.FrameRate = 30;
